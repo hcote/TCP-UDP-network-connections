@@ -1,4 +1,4 @@
-## Hello world application to locally build different socket connections.
+## This is a 'hello world' application to locally build different socket connections.
 
 ## To create TCP connection
 1. In one terminal, run 
