@@ -13,5 +13,5 @@ $ python3 tcpClient.py
 $ python3 tcpServer.py
 2. In another temrinal tab, run 
 $ python3 tcpClient.py
-3. In the client terminal, type some code and hit enter
+3. In the client terminal, type some code and hit return
 4. In the server terminal, you'll see the message echo'd
