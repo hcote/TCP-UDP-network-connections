@@ -1,83 +1,41 @@
-# https://www.youtube.com/watch?v=bTThyxVy7Sk&index=7&list=PL1A2CSdiySGIPxpSlgzsZiWDavYTAx61d&t=0s
-# client/server is most common networking model
-# peer-to-peer model for when it doesn't make sense for data to get sent to a server
-    # skype - you don't want your voice going to the server then your friend
-# ports - numbers 1-1024 are reserved for core protocols
-    # use something above 1024 but below 65000
-# sockets - programming abstractions for connections
-    # allow us to communicate bi-directionally
-    # use them to send and receive data
-# socket methods
-    # socket(socket_family, socket_type)
-    # creates a new socket
-    # bind((hostname, port))
-    # binds a host to a port, takes a tuple of host address and port
-    # listen()
-    # listens for TCP connections
-    # accept()
-    # accepts a connection when found (returns a new socket)
-    # connect ((hostname, port))
-    # recv(buffer)
-    # grabs data from TCP connection
-    # buffer determines how many bytes of data
-    # send(bytes)
-    # close()
-    # closes a socket
+https://www.youtube.com/watch?v=bTThyxVy7Sk&index=7&list=PL1A2CSdiySGIPxpSlgzsZiWDavYTAx61d&t=0s
+client/server is most common networking model
+peer-to-peer model for when it doesn't make sense for data to get sent to a server
+    skype - you don't want your voice going to the server then your friend
+ports - numbers 1-1024 are reserved for core protocols
+    use something above 1024 but below 65000
+sockets - programming abstractions for connections
+    allow us to communicate bi-directionally
+    use them to send and receive data
+socket methods
+    socket(socket_family, socket_type)
+    creates a new socket
+    bind((hostname, port))
+    binds a host to a port, takes a tuple of host address and port
+    listen()
+    listens for TCP connections
+    accept()
+    accepts a connection when found (returns a new socket)
+    connect ((hostname, port))
+    recv(buffer)
+    grabs data from TCP connection
+    buffer determines how many bytes of data
+    send(bytes)
+    close()
+    closes a socket
 
-# Instructions
-# run python3 tcpServer.py
-# python3 tcpClient.py
-# what you type in the client will be echo'd by the server
+Instructions
+run python3 tcpServer.py
+python3 tcpClient.py
+what you type in the client will be echo'd by the server
 
-# -----------
+-----------
 
-# UDP - used for streaming (unreliable, if packets get lost they're lost for good)
-    # This is why it's so fast
-    # TCP/IP checks that packets were recieved and resends any if lost
-# Creating the same program as above but his time using UDP connection
+UDP - used for streaming (unreliable, if packets get lost they're lost for good)
+    This is why it's so fast
+    TCP/IP checks that packets were recieved and resends any if lost
+Creating the same program as above but his time using UDP connection
 
-# Instructions
-# run python3 udpServer.py
-# python3 udpClient.pyHunters-MacBook-Pro:python-networks huntercote$ open networking.txt
-Hunters-MacBook-Pro:python-networks huntercote$ cat networking.txt
-# https://www.youtube.com/watch?v=bTThyxVy7Sk&index=7&list=PL1A2CSdiySGIPxpSlgzsZiWDavYTAx61d&t=0s
-# client/server is most common networking model
-# peer-to-peer model for when it doesn't make sense for data to get sent to a server
-    # skype - you don't want your voice going to the server then your friend
-# ports - numbers 1-1024 are reserved for core protocols
-    # use something above 1024 but below 65000
-# sockets - programming abstractions for connections
-    # allow us to communicate bi-directionally
-    # use them to send and receive data
-# socket methods
-    # socket(socket_family, socket_type)
-    # creates a new socket
-    # bind((hostname, port))
-    # binds a host to a port, takes a tuple of host address and port
-    # listen()
-    # listens for TCP connections
-    # accept()
-    # accepts a connection when found (returns a new socket)
-    # connect ((hostname, port))
-    # recv(buffer)
-    # grabs data from TCP connection
-    # buffer determines how many bytes of data
-    # send(bytes)
-    # close()
-    # closes a socket
-
-# Instructions
-# run python3 tcpServer.py
-# python3 tcpClient.py
-# what you type in the client will be echo'd by the server
-
-# -----------
-
-# UDP - used for streaming (unreliable, if packets get lost they're lost for good)
-    # This is why it's so fast
-    # TCP/IP checks that packets were recieved and resends any if lost
-# Creating the same program as above but his time using UDP connection
-
-# Instructions
-# run python3 udpServer.py
-# python3 udpClient.p
+Instructions
+run python3 udpServer.py
+python3 udpClient.p
